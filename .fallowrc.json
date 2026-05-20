@@ -10,5 +10,19 @@
   "rules": {
     "unused-dependencies": "warn"
   },
+  "usedClassMembers": [
+    {
+      "extends": "WorkflowEntrypoint",
+      "members": ["run"]
+    },
+    {
+      "extends": "WorkerEntrypoint",
+      "members": ["fetch"]
+    },
+    {
+      "extends": "DurableObject",
+      "members": ["alarm", "checkLimit", "hash", "verify"]
+    }
+  ],
   "ignorePatterns": ["worker-configuration.d.ts"]
 }
